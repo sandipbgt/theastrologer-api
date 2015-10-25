@@ -2,6 +2,9 @@
 
 API to view and send horoscope as SMS from [theastrologer.com](http://theastrologer.com) using [theastrologer](https://pypi.python.org/pypi/theastrologer/) lilbrary, Flask framework and Twilio API
 
+## Documentation
+The documentation is available at [http://sandipbgt.github.io/theastrologer-api](http://sandipbgt.github.io/theastrologer-api)
+
 ## Installation
 ```sh
 $ git clone https://github.com/sandipbgt/theastrologer-api.git
