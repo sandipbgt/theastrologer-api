@@ -1,0 +1,371 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API Endpoints &mdash; theastrologer-api 0.1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="theastrologer-api 0.1.0 documentation" href="index.html"/>
+        <link rel="prev" title="Features" href="features.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> theastrologer-api
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features.html">Features</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">API Endpoints</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#base">Base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#root">Root</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#horoscope">Horoscope</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">theastrologer-api</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>API Endpoints</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/api.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api-endpoints">
+<h1>API Endpoints<a class="headerlink" href="#api-endpoints" title="Permalink to this headline">¶</a></h1>
+<p>The readonly <code class="docutils literal"><span class="pre">API</span></code> are documented here.</p>
+<p>Feel free to use cURL and python to look at formatted json respone. You can
+also look at them in your browser, if it handles returned json.</p>
+<div class="highlight-python"><div class="highlight"><pre>curl http://theastrologer-api.herokuapp.com | python -m json.tool
+</pre></div>
+</div>
+<div class="section" id="base">
+<h2>Base<a class="headerlink" href="#base" title="Permalink to this headline">¶</a></h2>
+<dl class="get">
+<dt id="get--">
+<code class="descname">GET </code><code class="descname">/</code><a class="headerlink" href="#get--" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve author and project info</p>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+  <span class="s2">&quot;api&quot;</span><span class="o">:</span> <span class="s2">&quot;https://theastrologer-api.herokuapp.com/api&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;author&quot;</span><span class="o">:</span> <span class="s2">&quot;Sandip Bhagat&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;author_url&quot;</span><span class="o">:</span> <span class="s2">&quot;http://sandipbgt.github.io&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;base_url&quot;</span><span class="o">:</span> <span class="s2">&quot;https://theastrologer-api.herokuapp.com&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;project_name&quot;</span><span class="o">:</span> <span class="s2">&quot;theastrologer-api&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;project_url&quot;</span><span class="o">:</span> <span class="s2">&quot;https://github.com/sandipbgt/theastrologer-api&quot;</span>
+ <span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="root">
+<h2>Root<a class="headerlink" href="#root" title="Permalink to this headline">¶</a></h2>
+<dl class="get">
+<dt id="get--api">
+<code class="descname">GET </code><code class="descname">/api</code><a class="headerlink" href="#get--api" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve list of api resources.</p>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+  <span class="s2">&quot;today&quot;</span><span class="o">:</span> <span class="s2">&quot;https://theastrologer-api.herokuapp.com/api/horoscope/{sunsign}/today&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;tomorrow&quot;</span><span class="o">:</span> <span class="s2">&quot;https://theastrologer-api.herokuapp.com/api/horoscope/{sunsign}/tomorrow&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;yesterday&quot;</span><span class="o">:</span> <span class="s2">&quot;https://theastrologer-api.herokuapp.com/api/horoscope/{sunsign}/yesterday&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="horoscope">
+<h2>Horoscope<a class="headerlink" href="#horoscope" title="Permalink to this headline">¶</a></h2>
+<dl class="get">
+<dt id="get--api-horoscope-sunsign-today">
+<code class="descname">GET </code><code class="descname">/api/horoscope/{sunsign}/today</code><a class="headerlink" href="#get--api-horoscope-sunsign-today" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve today&#8217;s horoscope</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>sunsign</strong> (<em>string</em>) &#8211; horoscope&#8217;s sunsign</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;date&quot;</span><span class="o">:</span> <span class="s2">&quot;2015-10-20&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sunsign&quot;</span><span class="o">:</span> <span class="s2">&quot;Aquarius&quot;</span>
+    <span class="s2">&quot;horoscope&quot;</span><span class="o">:</span> <span class="s2">&quot;You&#39;re a thinker by nature, but focus today on staying grounded in your body. Go for a long walk or do some yoga on your living room floor. Eat foods that are densely nutritious. Then focus on your future. It&#39;s time to take some solid steps toward a more secure life, whether that means adjusting your budget, looking for a new, better job, enrolling in classes or anything else that will improve your standing.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;meta&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;intensity&quot;</span><span class="o">:</span> <span class="s2">&quot;55%&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;keywords&quot;</span><span class="o">:</span> <span class="s2">&quot;factual, permanence&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;mood&quot;</span><span class="o">:</span> <span class="s2">&quot;cultured&quot;</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--api-horoscope-sunsign-today">
+<code class="descname">POST </code><code class="descname">/api/horoscope/{sunsign}/today</code><a class="headerlink" href="#post--api-horoscope-sunsign-today" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends today&#8217;s horoscope as SMS via Twilio API.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must have <code class="docutils literal"><span class="pre">Twilio</span> <span class="pre">API</span></code> environment variables configured to use <code class="docutils literal"><span class="pre">SMS</span></code> features.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>sunsign</strong> (<em>string</em>) &#8211; horoscope&#8217;s sunsign</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+  <span class="s2">&quot;code&quot;</span><span class="o">:</span> <span class="mi">201</span><span class="p">,</span>
+  <span class="s2">&quot;message&quot;</span><span class="o">:</span> <span class="s2">&quot;success&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-horoscope-sunsign-tomorrow">
+<code class="descname">GET </code><code class="descname">/api/horoscope/{sunsign}/tomorrow</code><a class="headerlink" href="#get--api-horoscope-sunsign-tomorrow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve tomorrow&#8217;s horoscope</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>sunsign</strong> (<em>string</em>) &#8211; horoscope&#8217;s sunsign</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;date&quot;</span><span class="o">:</span> <span class="s2">&quot;2015-10-21&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sunsign&quot;</span><span class="o">:</span> <span class="s2">&quot;Aquarius&quot;</span>
+    <span class="s2">&quot;horoscope&quot;</span><span class="o">:</span> <span class="s2">&quot;Today you&#39;re infused with the excitement of discovery. The world is full of possibility. It&#39;s a great time to research or develop a project, whether a personal or professional one. The important thing is to be creative: The more innovative your ideas, the better. A pioneering approach will not only lead to big things, it will impress your employer and other VIPs who are looking for something just a little bit different now.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;meta&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;intensity&quot;</span><span class="o">:</span> <span class="s2">&quot;85%&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;keywords&quot;</span><span class="o">:</span> <span class="s2">&quot;loyal, carrier&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;mood&quot;</span><span class="o">:</span> <span class="s2">&quot;revolutionary&quot;</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-horoscope-sunsign-yesterday">
+<code class="descname">GET </code><code class="descname">/api/horoscope/{sunsign}/yesterday</code><a class="headerlink" href="#get--api-horoscope-sunsign-yesterday" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve yesterday&#8217;s horoscope</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>sunsign</strong> (<em>string</em>) &#8211; horoscope&#8217;s sunsign</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;date&quot;</span><span class="o">:</span> <span class="s2">&quot;2015-10-19&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sunsign&quot;</span><span class="o">:</span> <span class="s2">&quot;Aquarius&quot;</span>
+    <span class="s2">&quot;horoscope&quot;</span><span class="o">:</span> <span class="s2">&quot;You&#39;re squirming today against some external attempt to confine your movements or your creativity. Of course, you&#39;re ultra-sensitive to any type of restriction, so this certainly doesn&#39;t sit well with you. Whether it&#39;s something as straightforward as a traffic jam or as complicated as a relationship doesn&#39;t matter. It&#39;s not the exact situation that matters as much as your reaction to it. Go for the mature, civilized approach today.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;meta&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;intensity&quot;</span><span class="o">:</span> <span class="s2">&quot;55%&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;keywords&quot;</span><span class="o">:</span> <span class="s2">&quot;quiet, simple&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;mood&quot;</span><span class="o">:</span> <span class="s2">&quot;boring&quot;</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="features.html" class="btn btn-neutral" title="Features" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Sandip Bhagat.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
