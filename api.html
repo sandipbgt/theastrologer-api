@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>API Endpoints &mdash; theastrologer-api 0.1.0 documentation</title>
+  <title>API Endpoints &mdash; theastrologer-api 0.1.3 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="theastrologer-api 0.1.0 documentation" href="index.html"/>
+    <link rel="top" title="theastrologer-api 0.1.3 documentation" href="index.html"/>
         <link rel="prev" title="Features" href="features.html"/> 
 
   
@@ -59,7 +59,7 @@
             
             
               <div class="version">
-                0.1.0
+                0.1
               </div>
             
           
@@ -112,7 +112,7 @@
         <div class="rst-content">
           
 
-
+ 
 
 
 
@@ -137,9 +137,9 @@
   <div class="section" id="api-endpoints">
 <h1>API Endpoints<a class="headerlink" href="#api-endpoints" title="Permalink to this headline">¶</a></h1>
 <p>The readonly <code class="docutils literal"><span class="pre">API</span></code> are documented here.</p>
-<p>Feel free to use cURL and python to look at formatted json respone. You can
+<p>Feel free to use cURL and python to look at formatted json response. You can
 also look at them in your browser, if it handles returned json.</p>
-<div class="highlight-python"><div class="highlight"><pre>curl http://theastrologer-api.herokuapp.com | python -m json.tool
+<div class="highlight-python"><div class="highlight"><pre><span></span>curl http://sandipbgt.com/theastrologer | python -m json.tool
 </pre></div>
 </div>
 <div class="section" id="base">
@@ -149,14 +149,13 @@ also look at them in your browser, if it handles returned json.</p>
 <code class="descname">GET </code><code class="descname">/</code><a class="headerlink" href="#get--" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve author and project info</p>
 <p><strong>Example response</strong>:</p>
-<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
-  <span class="s2">&quot;api&quot;</span><span class="o">:</span> <span class="s2">&quot;https://theastrologer-api.herokuapp.com/api&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;author&quot;</span><span class="o">:</span> <span class="s2">&quot;Sandip Bhagat&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;author_url&quot;</span><span class="o">:</span> <span class="s2">&quot;http://sandipbgt.github.io&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;base_url&quot;</span><span class="o">:</span> <span class="s2">&quot;https://theastrologer-api.herokuapp.com&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;project_name&quot;</span><span class="o">:</span> <span class="s2">&quot;theastrologer-api&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;project_url&quot;</span><span class="o">:</span> <span class="s2">&quot;https://github.com/sandipbgt/theastrologer-api&quot;</span>
- <span class="p">}</span>
+<div class="highlight-js"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;author&quot;</span><span class="o">:</span> <span class="s2">&quot;Sandip Bhagat&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;author_url&quot;</span><span class="o">:</span> <span class="s2">&quot;http://sandipbgt.com&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;project_name&quot;</span><span class="o">:</span> <span class="s2">&quot;theastrologer-api&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;github&quot;</span><span class="o">:</span> <span class="s2">&quot;https://github.com/sandipbgt/theastrologer-api&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;api&quot;</span><span class="o">:</span> <span class="s2">&quot;http://sandipbgt.com/theastrologer/api&quot;</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -169,10 +168,11 @@ also look at them in your browser, if it handles returned json.</p>
 <code class="descname">GET </code><code class="descname">/api</code><a class="headerlink" href="#get--api" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve list of api resources.</p>
 <p><strong>Example response</strong>:</p>
-<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
-  <span class="s2">&quot;today&quot;</span><span class="o">:</span> <span class="s2">&quot;https://theastrologer-api.herokuapp.com/api/horoscope/{sunsign}/today&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;tomorrow&quot;</span><span class="o">:</span> <span class="s2">&quot;https://theastrologer-api.herokuapp.com/api/horoscope/{sunsign}/tomorrow&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;yesterday&quot;</span><span class="o">:</span> <span class="s2">&quot;https://theastrologer-api.herokuapp.com/api/horoscope/{sunsign}/yesterday&quot;</span>
+<div class="highlight-js"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;sunsign_list&quot;</span><span class="o">:</span> <span class="s2">&quot;http://sandipbgt.com/theastrologer/api/sunsigns&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;today&quot;</span><span class="o">:</span> <span class="s2">&quot;http://sandipbgt.com/theastrologer/api/horoscope/{sunsign}/today&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;yesterday&quot;</span><span class="o">:</span> <span class="s2">&quot;http://sandipbgt.com/theastrologer/api/horoscope/{sunsign}/yesterday&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;tomorrow&quot;</span><span class="o">:</span> <span class="s2">&quot;http://sandipbgt.com/theastrologer/api/horoscope/{sunsign}/tomorrow&quot;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -197,7 +197,7 @@ also look at them in your browser, if it handles returned json.</p>
 </tbody>
 </table>
 <p><strong>Example response</strong>:</p>
-<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+<div class="highlight-js"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="s2">&quot;date&quot;</span><span class="o">:</span> <span class="s2">&quot;2015-10-20&quot;</span><span class="p">,</span>
     <span class="s2">&quot;sunsign&quot;</span><span class="o">:</span> <span class="s2">&quot;Aquarius&quot;</span>
     <span class="s2">&quot;horoscope&quot;</span><span class="o">:</span> <span class="s2">&quot;You&#39;re a thinker by nature, but focus today on staying grounded in your body. Go for a long walk or do some yoga on your living room floor. Eat foods that are densely nutritious. Then focus on your future. It&#39;s time to take some solid steps toward a more secure life, whether that means adjusting your budget, looking for a new, better job, enrolling in classes or anything else that will improve your standing.&quot;</span><span class="p">,</span>
@@ -231,7 +231,7 @@ also look at them in your browser, if it handles returned json.</p>
 </tbody>
 </table>
 <p><strong>Example response</strong>:</p>
-<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+<div class="highlight-js"><div class="highlight"><pre><span></span><span class="p">{</span>
   <span class="s2">&quot;code&quot;</span><span class="o">:</span> <span class="mi">201</span><span class="p">,</span>
   <span class="s2">&quot;message&quot;</span><span class="o">:</span> <span class="s2">&quot;success&quot;</span>
 <span class="p">}</span>
@@ -255,7 +255,7 @@ also look at them in your browser, if it handles returned json.</p>
 </tbody>
 </table>
 <p><strong>Example response</strong>:</p>
-<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+<div class="highlight-js"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="s2">&quot;date&quot;</span><span class="o">:</span> <span class="s2">&quot;2015-10-21&quot;</span><span class="p">,</span>
     <span class="s2">&quot;sunsign&quot;</span><span class="o">:</span> <span class="s2">&quot;Aquarius&quot;</span>
     <span class="s2">&quot;horoscope&quot;</span><span class="o">:</span> <span class="s2">&quot;Today you&#39;re infused with the excitement of discovery. The world is full of possibility. It&#39;s a great time to research or develop a project, whether a personal or professional one. The important thing is to be creative: The more innovative your ideas, the better. A pioneering approach will not only lead to big things, it will impress your employer and other VIPs who are looking for something just a little bit different now.&quot;</span><span class="p">,</span>
@@ -285,7 +285,7 @@ also look at them in your browser, if it handles returned json.</p>
 </tbody>
 </table>
 <p><strong>Example response</strong>:</p>
-<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+<div class="highlight-js"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="s2">&quot;date&quot;</span><span class="o">:</span> <span class="s2">&quot;2015-10-19&quot;</span><span class="p">,</span>
     <span class="s2">&quot;sunsign&quot;</span><span class="o">:</span> <span class="s2">&quot;Aquarius&quot;</span>
     <span class="s2">&quot;horoscope&quot;</span><span class="o">:</span> <span class="s2">&quot;You&#39;re squirming today against some external attempt to confine your movements or your creativity. Of course, you&#39;re ultra-sensitive to any type of restriction, so this certainly doesn&#39;t sit well with you. Whether it&#39;s something as straightforward as a traffic jam or as complicated as a relationship doesn&#39;t matter. It&#39;s not the exact situation that matters as much as your reaction to it. Go for the mature, civilized approach today.&quot;</span><span class="p">,</span>
@@ -319,7 +319,7 @@ also look at them in your browser, if it handles returned json.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2015, Sandip Bhagat.
+        &copy; Copyright 2016, Sandip Bhagat.
 
     </p>
   </div>
@@ -341,7 +341,7 @@ also look at them in your browser, if it handles returned json.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.1.0',
+            VERSION:'0.1.3',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

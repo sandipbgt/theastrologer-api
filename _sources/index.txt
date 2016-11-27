@@ -1,7 +1,7 @@
 Welcome to theastrologer-api
 ============================
 
-`theastrologer-api <http://sandipbgt.github.io/theastrologer-api>`_ is an
+`theastrologer-api <http://sandipbgt.com/theastrologer/api>`_ is an
 un-official REST API that exposes readonly GET endpoints to see your horoscopes
 from `theastrologer.com <http://theastrologer.com>`_ website
 
