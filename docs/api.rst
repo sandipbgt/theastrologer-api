@@ -3,12 +3,12 @@ API Endpoints
 
 The readonly ``API`` are documented here.
 
-Feel free to use cURL and python to look at formatted json respone. You can
+Feel free to use cURL and python to look at formatted json response. You can
 also look at them in your browser, if it handles returned json.
 
 ::
 
-    curl http://theastrologer-api.herokuapp.com | python -m json.tool
+    curl http://sandipbgt.com/theastrologer | python -m json.tool
 
 Base
 ----
@@ -20,14 +20,13 @@ Base
 
    .. sourcecode:: js
 
-      {
-        "api": "https://theastrologer-api.herokuapp.com/api",
-        "author": "Sandip Bhagat",
-        "author_url": "http://sandipbgt.github.io",
-        "base_url": "https://theastrologer-api.herokuapp.com",
-        "project_name": "theastrologer-api",
-        "project_url": "https://github.com/sandipbgt/theastrologer-api"
-       }
+        {
+            "author": "Sandip Bhagat",
+            "author_url": "http://sandipbgt.com",
+            "project_name": "theastrologer-api",
+            "github": "https://github.com/sandipbgt/theastrologer-api",
+            "api": "http://sandipbgt.com/theastrologer/api"
+        }
 
 Root
 ----
@@ -40,12 +39,13 @@ Root
 
    .. sourcecode:: js
 
-      {
-        "today": "https://theastrologer-api.herokuapp.com/api/horoscope/{sunsign}/today",
-        "tomorrow": "https://theastrologer-api.herokuapp.com/api/horoscope/{sunsign}/tomorrow",
-        "yesterday": "https://theastrologer-api.herokuapp.com/api/horoscope/{sunsign}/yesterday"
-      }
-
+    {
+        "sunsign_list": "http://sandipbgt.com/theastrologer/api/sunsigns",
+        "today": "http://sandipbgt.com/theastrologer/api/horoscope/{sunsign}/today",
+        "yesterday": "http://sandipbgt.com/theastrologer/api/horoscope/{sunsign}/yesterday",
+        "tomorrow": "http://sandipbgt.com/theastrologer/api/horoscope/{sunsign}/tomorrow"
+    }
+    
 Horoscope
 ---------
 
